@@ -1,0 +1,56 @@
+# Environment & Secrets (Never commit credentials)
+.env
+.env.*
+*.env
+backend/.env
+backend/.env.*
+!*.env.example
+
+# Local SQLite databases & state
+*.db
+*.sqlite
+*.sqlite3
+backend/*.db
+backend/test_aivoa.db
+
+# Dependencies & Virtual Environments
+node_modules/
+.venv/
+venv/
+backend/.venv/
+env/
+ENV/
+
+# Build artifacts
+dist/
+dist-ssr/
+build/
+*.local
+
+# Python caches and test artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
